@@ -1,1 +1,87 @@
-test website
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Spillportal – Windows 7 stil</title>
+  <!-- Windows 7 CSS framework -->
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #6db3f2, #1e69de); /* Windows 7 bakgrunn */
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI", sans-serif;
+    }
+    .window {
+      width: 500px;
+    }
+    .window-body p {
+      text-align: center; /* gjør teksten midtstilt */
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 10px;
+    }
+    .game {
+      text-align: center;
+    }
+    .game img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 5px;
+      border-radius: 12px;
+      background: white;
+      padding: 6px;
+    }
+    .game a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">🎮 Spillportal</div>
+    </div>
+    <div class="window-body">
+      <p>Velg et spill å starte:</p>
+      <div class="game-grid">
+        <div class="game">
+          <a href="roblox://" target="_blank">
+            <img src="https://static.wikia.nocookie.net/roblox/images/4/4d/BlueRobloxLogo.png/revision/latest/scale-to-width-down/250?cb=20250626184501" alt="Roblox">
+            <div>Roblox</div>
+          </a>
+        </div>
+        <div class="game">
+          <a href="https://www.crazygames.com/" target="_blank">
+            <img src="https://docs.crazygames.com/img/logo.png" alt="CrazyGames">
+            <div>CrazyGames</div>
+          </a>
+        </div>
+        <div class="game">
+          <a href="https://poki.com/" target="_blank">
+            <img src="https://poki.com/favicon.ico" alt="Poki">
+            <div>Poki</div>
+          </a>
+        </div>
+        <div class="game">
+          <a href="minecraftedu://" target="_blank">
+            <img src="https://edusupport.minecraft.net/hc/article_attachments/12443930919700" alt="Minecraft Edu">
+            <div>Minecraft Edu</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
